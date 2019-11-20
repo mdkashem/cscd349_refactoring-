@@ -11,13 +11,13 @@ package Dungeon;
 
 public class Thief extends Hero
 {
-	private static String name="Thief"; 
-	private static int hitPoints =75; 
-	private static	int attackSpeed =6;
-	private static  double chanceToHit=.8; 
-	private static  int damageMin=20; 
-	private static  int damageMax=20;
-	private static double chanceToBlock=0.5;
+	static String name="Thief"; 
+	static int hitPoints =75; 
+	static	int attackSpeed =6;
+	static  double chanceToHit=.8; 
+	static  int damageMin=20; 
+	static  int damageMax=20;
+	static double chanceToBlock=0.5;
 	
     public Thief()
 	{

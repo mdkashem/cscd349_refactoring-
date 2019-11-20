@@ -33,7 +33,7 @@ package Dungeon;
  * @version 1.0
  */
 
-public abstract class DungeonCharacter
+public abstract class DungeonCharacter implements Comparable
 {
 
 	protected String name;

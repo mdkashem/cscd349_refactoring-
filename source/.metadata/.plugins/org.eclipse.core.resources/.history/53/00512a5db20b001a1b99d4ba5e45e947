@@ -41,8 +41,6 @@ public abstract class Hero extends DungeonCharacter
 
 	protected int numTurns;
 
-
-
 //-----------------------------------------------------------------
 //calls base constructor and gets name of hero from user
   public Hero(String name, int hitPoints, int attackSpeed,

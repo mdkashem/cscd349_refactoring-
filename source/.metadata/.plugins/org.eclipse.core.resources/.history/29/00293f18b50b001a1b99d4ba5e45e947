@@ -39,9 +39,7 @@ public abstract class Hero extends DungeonCharacter
 		return numTurns;
 	}
 
-	protected int numTurns;
-
-
+	private int numTurns;
 
 //-----------------------------------------------------------------
 //calls base constructor and gets name of hero from user

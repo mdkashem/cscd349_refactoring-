@@ -33,7 +33,7 @@ package Dungeon;
  * @version 1.0
  */
 
-public abstract class DungeonCharacter
+public abstract class DungeonCharacter implements Comparable
 {
 
 	protected String name;
@@ -42,11 +42,11 @@ public abstract class DungeonCharacter
 	protected double chanceToHit;
 	protected int damageMin, damageMax;
 
-	/*public int compareTo(Object o)
+	public int compareTo(Object o)
 	{
 		return 1;
 	}
-*/
+
 //-----------------------------------------------------------------
 //explicit constructor to initialize instance variables -- it is called
 // by derived classes
