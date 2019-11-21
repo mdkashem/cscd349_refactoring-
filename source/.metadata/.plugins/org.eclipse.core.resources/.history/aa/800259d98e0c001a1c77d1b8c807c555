@@ -1,4 +1,4 @@
-
+package Dungeon;
 
 /**
  * Title: Hero.java
@@ -30,8 +30,18 @@
 
 public abstract class Hero extends DungeonCharacter
 {
-	protected double chanceToBlock;
+	private double chanceToBlock;
+	public double getChanceToBlock() {
+		return chanceToBlock;
+	}
+
+	public int getNumTurns() {
+		return numTurns;
+	}
+
 	protected int numTurns;
+
+
 
 //-----------------------------------------------------------------
 //calls base constructor and gets name of hero from user
@@ -112,7 +122,7 @@ Returns: nothing
 This method calls: getAttackSpeed()
 This method is called by: external sources
 ---------------------------------------------------------*/
-	public void battleChoices(DungeonCharacter opponent)
+public void battleChoices(DungeonCharacter opponent)
 	{
 	    numTurns = attackSpeed/opponent.getAttackSpeed();
 

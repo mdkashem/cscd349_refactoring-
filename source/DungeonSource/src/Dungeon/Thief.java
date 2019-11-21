@@ -16,7 +16,7 @@ public class Thief extends Hero
 	private static	int attackSpeed =6;
 	private static  double chanceToHit=.8; 
 	private static  int damageMin=20; 
-	private static  int damageMax=20;
+	private static  int damageMax=40;
 	private static double chanceToBlock=0.5;
 	
     public Thief()

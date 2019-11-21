@@ -31,6 +31,10 @@ package Dungeon;
 public abstract class Hero extends DungeonCharacter
 {
 	private double chanceToBlock;
+	public double getChanceToBlock() {
+		return chanceToBlock;
+	}
+
 
 	protected int numTurns;
 
