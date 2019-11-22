@@ -12,8 +12,8 @@ package Dungeon;
 
 public abstract class Monster extends DungeonCharacter
 {
-	private double chanceToHeal;
-	private int minHeal, maxHeal;
+	protected double chanceToHeal;
+	protected int minHeal, maxHeal;
 
 //-----------------------------------------------------------------
   public Monster(String name, int hitPoints, int attackSpeed,
