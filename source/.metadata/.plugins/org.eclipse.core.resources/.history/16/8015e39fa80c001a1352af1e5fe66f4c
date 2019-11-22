@@ -50,14 +50,13 @@ public class Dungeon
 {
     public static void main(String[] args)
 	{
-     HeroFactory factory = new HeroFactory();
+
 		Hero theHero;
 		Monster theMonster;
 
 		do
 		{
-		   // theHero = chooseHero();
-			theHero = factory.createHero();
+		    theHero = chooseHero();
 		    theMonster = generateMonster();
 			battle(theHero, theMonster);
 
