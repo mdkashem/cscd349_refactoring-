@@ -3,7 +3,7 @@ package Dungeon;
 import java.util.Scanner;
 
 public class HeroFactory {
-	private Scanner input;
+	Scanner input;
 	public Hero createHero(){
 		int choice;
 
