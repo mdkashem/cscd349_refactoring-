@@ -17,8 +17,14 @@ public class Warrior extends Hero
 
     public Warrior()
 	{
-
-		super("Warrior", 125, 4, .8, 35, 60, .2);
+    	hitpoints = 125;
+    	attackSpeed = 4;
+    	chanceToHit = .8;
+    	damageMin = 35;
+    	damageMax = 60;
+    	chanceToBlock = .2;
+    			
+		super("Warrior", hitpoints, attackSpeed, chanceToHit, damageMin, damageMax, chanceToBlock);
 
 
     }//end constructor
