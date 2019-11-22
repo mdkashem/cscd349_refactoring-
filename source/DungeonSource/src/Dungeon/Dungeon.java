@@ -1,5 +1,8 @@
 
 package Dungeon;
+
+import java.util.Scanner;
+
 /**
 
  * Title: Dungeon.java
@@ -74,12 +77,13 @@ this task
 	{
 		int choice;
 		Hero theHero;
+		Scanner kb = new Scanner(System.in);
 
 		System.out.println("Choose a hero:\n" +
 					       "1. Warrior\n" +
 						   "2. Sorceress\n" +
 						   "3. Thief");
-		choice = Keyboard.readInt();
+		choice = kb.nextInt();
 
 		switch(choice)
 		{
@@ -121,14 +125,21 @@ a polymorphic reference (Monster) to accomplish this task.
 playAgain allows gets choice from user to play another game.  It returns
 true if the user chooses to continue, false otherwise.
 ---------------------------------------------------------------------*/
+	 	
 	public static boolean playAgain()
 	{
 		char again;
+		Scanner kin = new Scanner(System.in);
 
 		System.out.println("Play again (y/n)?");
-		again = Keyboard.readChar();
-
-		return (again == 'Y' || again == 'y');
+		again = kin.next().charAt(0);
+		
+		
+		if(again == 'Y' || again == 'y') {
+			return true;
+		}
+	
+		return false;
 	}//end playAgain method
 
 
