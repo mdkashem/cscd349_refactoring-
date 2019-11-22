@@ -60,6 +60,7 @@ public class Dungeon
 
 		do
 		{
+		   // theHero = chooseHero();
 			theHero = factory.createHero();
 		    theMonster = monster.generateMonster();
 			battle(theHero, theMonster);

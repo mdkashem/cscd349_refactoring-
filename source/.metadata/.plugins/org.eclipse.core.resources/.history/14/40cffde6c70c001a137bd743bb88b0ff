@@ -3,7 +3,7 @@ package Dungeon;
 import java.util.Scanner;
 
 public class HeroFactory {
-	Scanner input;
+
 	public Hero createHero(){
 		int choice;
 
@@ -11,7 +11,8 @@ public class HeroFactory {
 					       "1. Warrior\n" +
 						   "2. Sorceress\n" +
 						   "3. Thief");
-		 input = new Scanner(System.in);
+		//choice = Keyboard.readInt();
+		Scanner input = new Scanner(System.in);
 		choice = input.nextInt();
 		Hero hero = null;
 		if(choice == 1){

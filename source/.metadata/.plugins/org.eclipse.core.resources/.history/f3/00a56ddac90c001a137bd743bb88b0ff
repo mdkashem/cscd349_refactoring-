@@ -54,14 +54,14 @@ public class Dungeon
     public static void main(String[] args)
 	{
      HeroFactory factory = new HeroFactory();
-     MonsterFactory monster = new MonsterFactory();
 		Hero theHero;
 		Monster theMonster;
 
 		do
 		{
+		   // theHero = chooseHero();
 			theHero = factory.createHero();
-		    theMonster = monster.generateMonster();
+		    theMonster = generateMonster();
 			battle(theHero, theMonster);
 
 		} while (playAgain());
