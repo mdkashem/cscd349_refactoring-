@@ -44,7 +44,7 @@ import java.util.Scanner;
 
   1.  Allow the user to choose a hero
   2.  Randomly select a monster
-  3.  Allow the hero to battle the monster
+  3.  Allow the hero to battle the monster 
 
   Once a battle concludes, the user has the option of repeating the above
 
