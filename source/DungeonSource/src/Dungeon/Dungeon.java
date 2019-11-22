@@ -109,6 +109,7 @@ user has the option of quitting.
 ---------------------------------------------------------------------*/
 	public static void battle(Hero theHero, Monster theMonster)
 	{
+		Scanner kin = new Scanner(System.in);
 		char pause = 'p';
 		System.out.println(theHero.getName() + " battles " +
 							theMonster.getName());
@@ -126,7 +127,7 @@ user has the option of quitting.
 
 			//let the player bail out if desired
 			System.out.print("\n-->q to quit, anything else to continue: ");
-			pause = Keyboard.readChar();
+			pause = kin.nextChar();
 
 		}//end battle loop
 

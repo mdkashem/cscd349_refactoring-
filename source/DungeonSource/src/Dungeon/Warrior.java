@@ -54,15 +54,15 @@ public class Warrior extends Hero
     public void battleChoices(DungeonCharacter opponent)
 	{
 		int choice;
-
 		super.battleChoices(opponent);
+		Scanner kin = new Scanner(System.in);
 
 		do
 		{
 		    System.out.println("1. Attack Opponent");
 		    System.out.println("2. Crushing Blow on Opponent");
 		    System.out.print("Choose an option: ");
-		    choice = Keyboard.readInt();
+		    choice = kin.nextInt();
 
 		    switch (choice)
 		    {

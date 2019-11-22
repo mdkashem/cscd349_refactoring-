@@ -53,6 +53,7 @@ public class Thief extends Hero
 	{
 		super.battleChoices(opponent);
 		int choice;
+		Scanner kin = new Scanner(System.in);
 
 
 		do
@@ -60,7 +61,7 @@ public class Thief extends Hero
 		    System.out.println("1. Attack Opponent");
 		    System.out.println("2. Surprise Attack");
 		    System.out.print("Choose an option: ");
-		    choice = Keyboard.readInt();
+		    choice = kin.nextInt();
 
 		    switch (choice)
 		    {

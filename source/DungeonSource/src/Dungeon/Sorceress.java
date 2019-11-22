@@ -51,13 +51,14 @@ public class Sorceress extends Hero
 	{
 		super.battleChoices(opponent);
 		int choice;
+		Scanner kin = new Scanner(System.in);
 
 		do
 		{
 		    System.out.println("1. Attack Opponent");
 		    System.out.println("2. Increase Hit Points");
 		    System.out.print("Choose an option: ");
-		    choice = Keyboard.readInt();
+		    choice = kin.nextInt();
 
 		    switch (choice)
 		    {

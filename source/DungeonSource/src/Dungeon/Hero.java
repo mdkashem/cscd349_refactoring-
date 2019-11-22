@@ -58,8 +58,9 @@ This method is called by: hero constructor
 ---------------------------------------------------------*/
   public void readName()
   {
+	  Scanner kin = new Scanner(System.in);
 		System.out.print("Enter character name: ");
-		name = Keyboard.readString();
+		name = kin.nextLine();
   }//end readName method
 
 /*-------------------------------------------------------
