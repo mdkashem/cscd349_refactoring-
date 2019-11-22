@@ -27,7 +27,7 @@ package Dungeon;
 	  public void attack(DungeonCharacter opponent) -- this method will be
 	    overridden
  *
- * Copyright:    Copyright (c) 2001
+ * Copyright:    Copyright (c) 2001 
  * Company:
  * @author
  * @version 1.0
