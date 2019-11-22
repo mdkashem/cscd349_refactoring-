@@ -41,6 +41,7 @@ public abstract class DungeonCharacter
 	protected int attackSpeed;
 	protected double chanceToHit;
 	protected int damageMin, damageMax;
+	protected List<Integer> intStats;
 
 	/*public int compareTo(Object o)
 	{
@@ -50,17 +51,11 @@ public abstract class DungeonCharacter
 //-----------------------------------------------------------------
 //explicit constructor to initialize instance variables -- it is called
 // by derived classes
-	public DungeonCharacter(String name, int hitPoints, int attackSpeed,
-				     double chanceToHit, int damageMin, int damageMax)
-	{
-
+	public DungeonCharacter(String name, List<Integer> intStats, double chanceToHit)
+	{		
 		this.name = name;
-		this.hitPoints = hitPoints;
-		this.attackSpeed = attackSpeed;
 		this.chanceToHit = chanceToHit;
-		this.damageMin = damageMin;
-		this.damageMax = damageMax;
-
+		this.intStats = intStats;
 	}//end constructor
 
 //-----------------------------------------------------------------

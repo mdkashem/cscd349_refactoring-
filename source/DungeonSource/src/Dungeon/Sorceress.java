@@ -15,11 +15,26 @@ public class Sorceress extends Hero
 {
 	private final int MIN_ADD = 25;
 	private final int MAX_ADD = 50;
+	
+	private static String name="Sorceress"; 
+	private static int hitPoints =75; 
+	private static int attackSpeed =5;
+	private static double chanceToHit=.7; 
+	private static int damageMin=25; 
+	private static int damageMax=50;
+	private static double chanceToBlock=0.3;
+	
+	private List<Integer> intStats = new arrayList<Integer>();
+	
+	intStats.add(hitpoints);
+	intStats.add(attackSpeed);
+	intStats.add(damageMin);
+	intStats.add(damageMax);
 
 //-----------------------------------------------------------------
     public Sorceress()
 	{
-		super("Sorceress", 75, 5, .7, 25, 50, .3);
+		super(name, intStats, chanceToHit, chanceToBlock);
 
 
     }//end constructor

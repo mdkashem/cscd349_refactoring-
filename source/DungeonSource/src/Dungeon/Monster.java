@@ -16,12 +16,9 @@ public abstract class Monster extends DungeonCharacter
 	private int minHeal, maxHeal;
 
 //-----------------------------------------------------------------
-  public Monster(String name, int hitPoints, int attackSpeed,
-				     double chanceToHit, double chanceToHeal,
-					 int damageMin, int damageMax,
-					 int minHeal, int maxHeal)
+  public Monster(String name, List<Integer> intStats,  double chanceToHit, double chanceToHeal, int minHeal, int maxHeal)
   {
-	super(name, hitPoints, attackSpeed, chanceToHit, damageMin, damageMax);
+	super(name, intStats, chanceToHit);
 	this.chanceToHeal = chanceToHeal;
 	this.maxHeal = maxHeal;
 	this.minHeal = minHeal;

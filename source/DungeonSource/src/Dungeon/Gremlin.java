@@ -12,9 +12,26 @@ package Dungeon;
 public class Gremlin extends Monster
 {
 
+	private static String name="Gnarltooth the Gremlin"; 
+	private static int hitPoints =70; 
+	private static int attackSpeed =5;
+	private static double chanceToHit=.8; 
+	private static double chanceToHeal = .4;
+	private static int damageMin=15; 
+	private static int damageMax=13;
+	private static int minHeal = 20;
+	private static int maxHeal = 40;
+	
+	private List<Integer> intStats = new arrayList<Integer>();
+	
+	intStats.add(hitpoints);
+	intStats.add(attackSpeed);
+	intStats.add(damageMin);
+	intStats.add(damageMax);
+	
     public Gremlin()
 	{
-		super("Gnarltooth the Gremlin", 70, 5, .8, .4, 15, 30, 20, 40);
+		super(name, intStats, chanceToHit, chanceToHeal, minHeal, maxHeal);
 
     }//end constructor
 

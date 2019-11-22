@@ -15,16 +15,24 @@ package Dungeon;
 public class Warrior extends Hero
 {
 
+	private static String name = "Warrior";
+	private static int hitpoints = 125;
+	private static int attackSpeed = 4;    	
+	private static int damageMin = 35;
+	private static int damageMax = 60;
+	private static double chanceToHit = .8;
+	private static double chanceToBlock = .2;
+	
+	private List<Integer> intStats = new arrayList<Integer>();
+	
+	intStats.add(hitpoints);
+	intStats.add(attackSpeed);
+	intStats.add(damageMin);
+	intStats.add(damageMax);
+	
     public Warrior()
-	{
-    	hitpoints = 125;
-    	attackSpeed = 4;
-    	chanceToHit = .8;
-    	damageMin = 35;
-    	damageMax = 60;
-    	chanceToBlock = .2;
-    			
-		super("Warrior", hitpoints, attackSpeed, chanceToHit, damageMin, damageMax, chanceToBlock);
+	{    	    			
+		super(name, intStats, chanceToHit, chanceToBlock);
 
 
     }//end constructor
