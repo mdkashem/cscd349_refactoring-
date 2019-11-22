@@ -1,0 +1,12 @@
+package Dungeon;
+
+public class HeroFactory {
+
+	public Hero createHero(){
+		Hero hero = null;
+		
+		
+		return hero;
+	}
+
+}
